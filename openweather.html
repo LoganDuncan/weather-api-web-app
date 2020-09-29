@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Weather by OpenWeatherMap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="js/moment.js"></script>
+	<script defer src="js/weather.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="col">
+			<div class="row header">
+				<h1>OpenWeatherMap.org API Weather</h1>
+			</div>
+			<div class="row form-group">
+				<input type="text" class="form-control" id="searchbox" size="60"
+					placeholder="Enter a location or a ZIP code" />
+				<button id="searchbutton">Current Weather</button>
+				<button id="searchbuttonforecast">5 Day Forecast</button>
+			</div>
+			<div id="weather" class="row"></div>
+		</div>
+		<footer>Brought to you by Logan Duncan & OpenWeatherMap.org</footer>
+	</div>
+</body>
+
+</html>
